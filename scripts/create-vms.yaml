@@ -1,0 +1,295 @@
+#
+# This is the JSON equivalent of the "centos-a" machine
+#
+#{
+#  "canIpForward": false,
+#  "cpuPlatform": "Intel Haswell",
+#  "creationTimestamp": "2019-03-24T12:27:05.384-07:00",
+#  "deletionProtection": false,
+#  "description": "",
+#  "disks": [
+#  {
+#    "autoDelete": false,
+#    "boot": true,
+#    "deviceName": "centos-1",
+#    "index": 0,
+#    "interface": "SCSI",
+#    "kind": "compute#attachedDisk",
+#    "licenses": [
+#      "projects/centos-cloud/global/licenses/centos-7"
+#    ],
+#    "mode": "READ_WRITE",
+#    "source": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/centos-1",
+#    "type": "PERSISTENT"
+#  }
+#  ],
+#  "displayDevice": {
+#    "enableDisplay": false
+#  },
+#  "id": "8947467737991111911",
+#  "kind": "compute#instance",
+#  "labelFingerprint": "42WmSpB8rSM=",
+#  "machineType": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c/machineTypes/n1-standard-1",
+#  "metadata": {
+#    "fingerprint": "IXopLEjgUls=",
+#    "kind": "compute#metadata"
+#  },
+#  "name": "centos-a",
+#  "networkInterfaces": [
+#  {
+#    "accessConfigs": [
+#    {
+#      "kind": "compute#accessConfig",
+#      "name": "External NAT",
+#      "natIP": "35.239.97.42",
+#      "networkTier": "PREMIUM",
+#      "type": "ONE_TO_ONE_NAT"
+#    }
+#    ],
+#    "fingerprint": "H7O136dsBrE=",
+#    "kind": "compute#networkInterface",
+#    "name": "nic0",
+#    "network": "projects/ktlx-info-k8s-istio-1/global/networks/default",
+#    "networkIP": "10.128.0.4",
+#    "subnetwork": "projects/ktlx-info-k8s-istio-1/regions/us-central1/subnetworks/default"
+#  }
+#  ],
+#  "scheduling": {
+#    "automaticRestart": true,
+#    "onHostMaintenance": "MIGRATE",
+#    "preemptible": false
+#  },
+#  "selfLink": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c/instances/centos-a",
+#  "serviceAccounts": [
+#  {
+#    "email": "555065540952-compute@developer.gserviceaccount.com",
+#    "scopes": [
+#      "https://www.googleapis.com/auth/cloud-platform"
+#    ]
+#  }
+#  ],
+#  "startRestricted": false,
+#  "status": "RUNNING",
+#  "tags": {
+#    "fingerprint": "FYLDgkTKlA4=",
+#    "items": [
+#      "http-server"
+#    ]
+#  },
+#  "zone": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c"
+#}
+#
+# This is the JSON equivalent of the "ubuntu-b" machine
+#
+#{
+#  "canIpForward": false,
+#  "cpuPlatform": "Intel Haswell",
+#  "creationTimestamp": "2019-03-24T12:36:48.307-07:00",
+#  "deletionProtection": false,
+#  "description": "",
+#  "disks": [
+#  {
+#    "autoDelete": false,
+#    "boot": true,
+#    "deviceName": "ubuntu-1",
+#    "guestOsFeatures": [
+#    {
+#      "type": "VIRTIO_SCSI_MULTIQUEUE"
+#    }
+#    ],
+#    "index": 0,
+#    "interface": "SCSI",
+#    "kind": "compute#attachedDisk",
+#    "licenses": [
+#      "projects/ubuntu-os-cloud/global/licenses/ubuntu-1804-lts"
+#    ],
+#    "mode": "READ_WRITE",
+#    "source": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/ubuntu-1",
+#    "type": "PERSISTENT"
+#  }
+#  ],
+#  "displayDevice": {
+#    "enableDisplay": false
+#  },
+#  "id": "2083857119898657440",
+#  "kind": "compute#instance",
+#  "labelFingerprint": "42WmSpB8rSM=",
+#  "machineType": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c/machineTypes/n1-standard-1",
+#  "metadata": {
+#    "fingerprint": "IXopLEjgUls=",
+#    "kind": "compute#metadata"
+#  },
+#  "name": "ubuntu-b",
+#  "networkInterfaces": [
+#  {
+#    "accessConfigs": [
+#    {
+#      "kind": "compute#accessConfig",
+#      "name": "External NAT",
+#      "natIP": "35.202.141.176",
+#      "networkTier": "PREMIUM",
+#      "type": "ONE_TO_ONE_NAT"
+#    }
+#    ],
+#    "fingerprint": "seU-x0oA0rI=",
+#    "kind": "compute#networkInterface",
+#    "name": "nic0",
+#    "network": "projects/ktlx-info-k8s-istio-1/global/networks/default",
+#    "networkIP": "10.128.0.5",
+#    "subnetwork": "projects/ktlx-info-k8s-istio-1/regions/us-central1/subnetworks/default"
+#  }
+#  ],
+#  "scheduling": {
+#    "automaticRestart": true,
+#    "onHostMaintenance": "MIGRATE",
+#    "preemptible": false
+#  },
+#  "selfLink": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c/instances/ubuntu-b",
+#  "serviceAccounts": [
+#  {
+#    "email": "555065540952-compute@developer.gserviceaccount.com",
+#    "scopes": [
+#      "https://www.googleapis.com/auth/cloud-platform"
+#    ]
+#  }
+#  ],
+#  "startRestricted": false,
+#  "status": "RUNNING",
+#  "tags": {
+#    "fingerprint": "FYLDgkTKlA4=",
+#    "items": [
+#      "http-server"
+#    ]
+#  },
+#  "zone": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c"
+#}
+#
+# This is the JSON equivalent of the "cos-c" machine
+#
+#{
+#  "canIpForward": false,
+#  "cpuPlatform": "Intel Haswell",
+#  "creationTimestamp": "2019-03-24T13:03:51.181-07:00",
+#  "deletionProtection": false,
+#  "description": "",
+#  "disks": [
+#  {
+#    "autoDelete": false,
+#    "boot": true,
+#    "deviceName": "cos-1",
+#    "guestOsFeatures": [
+#    {
+#      "type": "VIRTIO_SCSI_MULTIQUEUE"
+#    }
+#    ],
+#    "index": 0,
+#    "interface": "SCSI",
+#    "kind": "compute#attachedDisk",
+#    "licenses": [
+#      "projects/cos-cloud/global/licenses/cos",
+#      "projects/cos-cloud/global/licenses/cos-pcid"
+#    ],
+#    "mode": "READ_WRITE",
+#    "source": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/cos-1",
+#    "type": "PERSISTENT"
+#  }
+#  ],
+#  "displayDevice": {
+#    "enableDisplay": false
+#  },
+#  "id": "3028294688550050889",
+#  "kind": "compute#instance",
+#  "labelFingerprint": "42WmSpB8rSM=",
+#  "machineType": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c/machineTypes/n1-standard-1",
+#  "metadata": {
+#    "fingerprint": "IXopLEjgUls=",
+#    "kind": "compute#metadata"
+#  },
+#  "name": "cos-1",
+#  "networkInterfaces": [
+#  {
+#    "accessConfigs": [
+#    {
+#      "kind": "compute#accessConfig",
+#      "name": "External NAT",
+#      "natIP": "35.239.97.42",
+#      "networkTier": "PREMIUM",
+#      "type": "ONE_TO_ONE_NAT"
+#    }
+#    ],
+#    "fingerprint": "CEuFGMbSR48=",
+#    "kind": "compute#networkInterface",
+#    "name": "nic0",
+#    "network": "projects/ktlx-info-k8s-istio-1/global/networks/default",
+#    "networkIP": "10.128.0.6",
+#    "subnetwork": "projects/ktlx-info-k8s-istio-1/regions/us-central1/subnetworks/default"
+#  }
+#  ],
+#  "scheduling": {
+#    "automaticRestart": true,
+#    "onHostMaintenance": "MIGRATE",
+#    "preemptible": false
+#  },
+#  "selfLink": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c/instances/cos-1",
+#  "serviceAccounts": [
+#  {
+#    "email": "555065540952-compute@developer.gserviceaccount.com",
+#    "scopes": [
+#      "https://www.googleapis.com/auth/cloud-platform"
+#    ]
+#  }
+#  ],
+#  "startRestricted": false,
+#  "status": "RUNNING",
+#  "tags": {
+#    "fingerprint": "FYLDgkTKlA4=",
+#    "items": [
+#      "http-server"
+#    ]
+#  },
+#  "zone": "projects/ktlx-info-k8s-istio-1/zones/us-central1-c"
+#}
+
+resources:
+  - name: centos-a
+    type: compute.v1.instance
+    properties:
+      zone: us-central1-c
+      machineType: zones/us-central1-c/machineTypes/n1-standard-1
+      disks:
+        - deviceName: boot
+          type: PERSISTENT
+          boot: true
+          autoDelete: false
+          initializeParams:
+            sourceImage: projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/centos-1
+      networkInterfaces:
+        - network: global/networks/default
+  - name: ubuntu-b
+    type: compute.v1.instance
+    properties:
+      zone: us-central1-c
+      machineType: zones/us-central1-c/machineTypes/n1-standard-1
+      disks:
+        - deviceName: boot
+          type: PERSISTENT
+          boot: true
+          autoDelete: false
+          initializeParams:
+            sourceImage: projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/ubuntu-1
+      networkInterfaces:
+        - network: global/networks/default
+  - name: cos-c
+    type: compute.v1.instance
+    properties:
+      zone: us-central1-c
+      machineType: zones/us-central1-c/machineTypes/n1-standard-1
+      disks:
+        - deviceName: boot
+          type: PERSISTENT
+          boot: true
+          autoDelete: false
+          initializeParams:
+            sourceImage: projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/cos-1
+      networkInterfaces:
+        - network: global/networks/default
