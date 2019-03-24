@@ -1,0 +1,19 @@
+resources:
+- name: {{ env["name"] }}
+  type: compute.v1.instance
+  properties:
+    zone: {{ properties["zone"] }}
+    machineType: zones/{{ properties["zone"] }}/machineTypes/{{ properties["machineType"] }}
+    tags:
+      items: [ "http-server" ]
+    disks:
+      - deviceName: boot
+        type: PERSISTENT
+        boot: true
+        autoDelete: false
+        source: {{ properties["disk"] }}
+    networkInterfaces:
+      - network: global/networks/default
+        accessConfigs:
+          - name: External NAT
+            type: ONE_TO_ONE_NAT
