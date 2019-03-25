@@ -10,7 +10,7 @@ kind: Service
 metadata:
   name: hello-nto-service
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: hello-nto
   ports:
