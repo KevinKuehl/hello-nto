@@ -1,0 +1,28 @@
+#
+# Copyright 2019 Kevin Kuehl
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-nto-deployment
+  labels:
+    app: hello-nto
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-nto
+  template:
+    metadata:
+      labels:
+        app: hello-nto
+    spec:
+      containers:
+      - name: hello-nto
+        image: us.gcr.io/ktlx-info-k8s-istio-1/hello-nto:latest
+        ports:
+        - containerPort: 8080

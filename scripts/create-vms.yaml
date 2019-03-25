@@ -7,30 +7,30 @@
 #
 
 imports:
-  - path: instance-template.jinja
+- path: instance-template.jinja
 
 resources:
-  #
-  - name: centos-a
-    type: instance-template.jinja
-    properties:
-      zone: us-central1-c
-      machineType: n1-standard-1
-      disk: projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/centos-1
-  #
-  - name: ubuntu-b
-    type: instance-template.jinja
-    properties:
-      zone: us-central1-c
-      machineType: n1-standard-1
-      disk: projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/ubuntu-1
-  #
-  - name: cos-c
-    type: instance-template.jinja
-    properties:
-      zone: us-central1-c
-      machineType: n1-standard-1
-      disk: projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/cos-1
+#
+- name: centos-a
+  type: instance-template.jinja
+  properties:
+    zone: us-central1-c
+    machineType: n1-standard-1
+    disk: projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/centos-1
+#
+- name: ubuntu-b
+  type: instance-template.jinja
+  properties:
+    zone: us-central1-c
+    machineType: n1-standard-1
+    disk: projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/ubuntu-1
+#
+- name: cos-c
+  type: instance-template.jinja
+  properties:
+    zone: us-central1-c
+    machineType: n1-standard-1
+    disk: projects/ktlx-info-k8s-istio-1/zones/us-central1-c/disks/cos-1
 
 #
 # This is the JSON equivalent of the "centos-a" machine
