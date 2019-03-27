@@ -11,19 +11,19 @@ kind: Deployment
 metadata:
   name: hello-nto-server
   labels:
-    app: hello-nto
+    app: hello-nto-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-nto
+      app: hello-nto-server
   template:
     metadata:
       labels:
-        app: hello-nto
+        app: hello-nto-server
     spec:
       containers:
-        - name: hello-nto
+        - name: hello-nto-server
           image: us.gcr.io/ktlx-info-k8s-istio-1/hello-nto:1.0.0
           ports:
             - containerPort: 8080
@@ -33,19 +33,19 @@ kind: Deployment
 metadata:
   name: ingress-nto-server
   labels:
-    app: ingress-nto
+    app: ingress-nto-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ingress-nto
+      app: ingress-nto-server
   template:
     metadata:
       labels:
-        app: ingress-nto
+        app: ingress-nto-server
     spec:
       containers:
-        - name: ingress-nto
+        - name: ingress-nto-server
           image: us.gcr.io/ktlx-info-k8s-istio-1/ingress-nto:1.0.0
           ports:
             - containerPort: 8080
@@ -55,19 +55,19 @@ kind: Deployment
 metadata:
   name: gcp-hello-server
   labels:
-    app: gcp-hello-app
+    app: gcp-hello-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gcp-hello-app
+      app: gcp-hello-server
   template:
     metadata:
       labels:
-        app: gcp-hello-app
+        app: gcp-hello-server
     spec:
       containers:
-        - name: gcp-hello-app
+        - name: gcp-hello-server
           image: gcr.io/google-samples/hello-app:1.0
           ports:
             - containerPort: 8080

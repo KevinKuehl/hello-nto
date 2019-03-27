@@ -14,15 +14,15 @@ spec:
   rules:
   - http:
       paths:
-      - path: /
+      - path: /*
         backend:
-          serviceName: gcp-hello-service
+          serviceName: gcp-hello-nodeport
           servicePort: 8080
-      - path: /hello
+      - path: /hello/*
         backend:
-          serviceName: hello-nto-service
+          serviceName: hello-nto-nodeport
           servicePort: 8080
-      - path: /debug
+      - path: /debug/*
         backend:
-          serviceName: ingress-nto-service
+          serviceName: ingress-nto-nodeport
           servicePort: 8080
