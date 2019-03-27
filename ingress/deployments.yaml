@@ -1,0 +1,73 @@
+#
+# Copyright 2019 Kevin Kuehl
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-nto-server
+  labels:
+    app: hello-nto
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-nto
+  template:
+    metadata:
+      labels:
+        app: hello-nto
+    spec:
+      containers:
+        - name: hello-nto
+          image: us.gcr.io/ktlx-info-k8s-istio-1/hello-nto:1.0.0
+          ports:
+            - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ingress-nto-server
+  labels:
+    app: ingress-nto
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ingress-nto
+  template:
+    metadata:
+      labels:
+        app: ingress-nto
+    spec:
+      containers:
+        - name: ingress-nto
+          image: us.gcr.io/ktlx-info-k8s-istio-1/ingress-nto:1.0.0
+          ports:
+            - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gcp-hello-server
+  labels:
+    app: gcp-hello-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gcp-hello-app
+  template:
+    metadata:
+      labels:
+        app: gcp-hello-app
+    spec:
+      containers:
+        - name: gcp-hello-app
+          image: gcr.io/google-samples/hello-app:1.0
+          ports:
+            - containerPort: 8080
