@@ -23,6 +23,6 @@ spec:
     spec:
       containers:
       - name: hello-nto
-        image: us.gcr.io/ktlx-info-k8s-istio-1/hello-nto:latest
+        image: us.gcr.io/ktlx-info-k8s-istio-1/hello-nto:1.0.0
         ports:
         - containerPort: 8080
